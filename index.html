@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagem & Som Eletronica</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto+Mono:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"> 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <header class="navbar navbar-expand-lg sticky-top" id="cabecalho">
+        <div class="container">
+            <h1 class="navbar-brand m-0 p-2 fonte">
+                <img src="./img/imagemesomFoto.jpg" alt="Logo_da_Empresa">
+                Imagem & Som
+            </h1>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu-navegacao">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <nav class="navbar-collapse collapse justify-content-end" id="menu-navegacao">
+                <ul class="nav nav-pills d-block d-md-flex fw-bold">
+                    <li class="nav-item ">
+                        <a class="nav-link active" href="#sobre-a-loja">
+                            <i class="bi bi-house-door me-1"></i>
+                            Sobre a loja
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#servicos">
+                            <i class="bi bi-list-check me-1"></i>
+                            Serviços
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#venda-de-placas">
+                            <i class="bi bi-bag me-1"></i>
+                            Venda de Placas
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#fale-conosco">
+                            <i class="bi bi-chat-left-text me-1"></i>
+                            Fale Conosco
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div data-bs-spy="scroll" data-bs-target="#cabecalho" data-bs-smooth-scroll="true">
+        <section id="carrosel-de-imagens">
+            <div class="carousel slide" data-bs-ride="carousel" id="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-inteval="3000">
+                        <img src="./img-banner/img4.jpg" alt="Foto da logo">
+                    </div>
+                    <div class="carousel-item" data-bs-inteval="3000">
+                        <img src="./img-banner/img3.JPG" alt="Foto das TVS">
+                    </div>
+                    <div class="carousel-item" data-bs-inteval="3000">
+                        <img src="./img-banner/img-2.webp" alt="Foto de uma tv">
+                    </div>
+                    <div class="carousel-item" data-bs-inteval="3000">
+                        <img src="./img-banner/img1.jpg" alt="Foto de tvs">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carousel" class="active" data-bs-slide-to="0"></button>
+                <button type="button" data-bs-target="#carousel" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#carousel" data-bs-slide-to="2"></button>
+                <button type="button" data-bs-target="#carousel" data-bs-slide-to="3"></button>
+            </div>
+            <section id="sobre-a-loja" class="pt-5 pb-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-7">
+                            <div class="carousel-slide" data-bs-ride="carousel" id="carousel-sobre-a-loja">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active" data-bs-inteval="3000">
+                                        <img src="./img-sobre-a-loja/foto-oficina.png" class="d-block w-100 rounded" alt="foto da oficina">
+                                    </div>
+                                    <div class="carousel-item" data-bs-inteval="3000">
+                                        <img src="./img-sobre-a-loja/foto-ferro-de-solda.jpg" class="d-block w-100 rounded" alt="foto do ferro de solda">
+                                    </div>
+                                    <div class="carousel-item" data-bs-inteval="3000">
+                                        <img src="./img-sobre-a-loja/Reparo-de-Televisao.jpg" class="d-block w-100 rounded" alt="foto de tv" >
+                                    </div>
+                                    <div class="carousel-indicators">
+                                        <button type="button" data-bs-target="#carousel-sobre-a-loja" class="active" data-bs-slide-to="0"></button>
+                                        <button type="button" data-bs-target="#carousel-sobre-a-loja" data-bs-slide-to="1"></button>
+                                        <button type="button" data-bs-target="#carousel-sobre-a-loja" data-bs-slide-to="2"></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-5">
+                            <h2 class="p-3 fs-2">Sobre a Loja</h2>
+                            <p class="p-3">Somos a Assistência técnica Imagem & Som, estamos no mercado desde 1992 atuando como assistência especializada em manutenção de equipamentos de tv, som e microondas de todas as marcas.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+        <section id="servicos" class="pt-5 pb-5">
+            <div class="container">
+                    <div class="row">
+                        <h2 class="p-3 fs-2 mb-4">Nossos Serviços</h2>
+                        <div class="col-md-2">
+                            <img src="./img-servicos/imagem_de_manutencao_servicos.jpeg" alt="imagem de um técnico">
+                        </div>
+                        <div class="col-md-4" class="mt-2">
+                            <ul class="fs-4">
+                                <li class="p-2">Conserto TVs</li>
+                                <li class="p-2">Conserto Notbooks</li>
+                                <li class="p-2">Conserto de Som</li>
+                                <li class="p-2">Conserto de Led</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4" class="mt-2">
+                            <ul class="fs-4">
+                                <li class="p-2">Manutenção Preventiva</li>
+                                <li class="p-2">Manutenção Corretiva</li>
+                                <li class="p-2">Recolhimento Som e TV para Descarte Adequados</li>
+                                <li class="p-2">Orçamento de Até 3 dias Uteis</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-2" class="mt-2">
+                            <img src="./img-servicos/imagem_de_manutencao_servicos.jpeg" alt="imagem de um técnico">
+                        </div>
+                    </div>
+            </div>
+        </section>
+        <section id="venda-de-placas" class="pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <h2 class="p-3 fs-2">Venda de Placas</h2>
+                </div>
+                <div class="row mt-4">
+                    <aside class="col-md-2" class="mt-2">
+                        <nav class="nav nav-pills flex-column">
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#samsung" class="nav-botao active">Placas Samsung</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#lg" class="nav-botao">Placas LG</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#panasonic" class="nav-botao">Placas Panasonic</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#sony" class="nav-botao">Placas Sony</button>
+                        </nav>
+                    </aside>
+                    <div class="col-md-10" class="mt-2">
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="samsung">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img src="./samsung/font_Sansung_Un55mu6100g_un50ku6000g_Bn44-00807a.jpg" class="d-block w-100" alt="placa de samsung">
+                                        <h5 class="mt-2 fw-bold">Placa da Fonte UN55MU6100g</h5>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img src="./samsung/PLACA T-CON_TV_SAMSUNG_BN94-08385G_BN94-08623B.webp" class="d-block w-100" alt="placa de samsung">
+                                        <h5 class="mt-2 fw-bold">T-con BN94-08623B</h5>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img src="./samsung/Placa_SSB_BN94-10927G_Un55ku6300G.jpg" class="d-block w-100" alt="placa de samsung">
+                                        <h5 class="mt-2 fw-bold">T-con BN94-10927G</h5>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img src="./samsung/font_Sansung_Un55mu6100g_un50ku6000g_Bn44-00807a.jpg" class="d-block w-100" alt="placa de samsung">
+                                        <h5 class="mt-2 fw-bold">Placa da Fonte UN55MU6100g</h5>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img src="./samsung/PLACA T-CON_TV_SAMSUNG_BN94-08385G_BN94-08623B.webp" class="d-block w-100" alt="placa de samsung">
+                                        <h5 class="mt-2 fw-bold">T-con BN94-08623B</h5>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img src="./samsung/Placa_SSB_BN94-10927G_Un55ku6300G.jpg" class="d-block w-100" alt="placa de samsung">
+                                        <h5 class="mt-2 fw-bold">T-con BN94-10927G</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="lg">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img src="./LG/Fonte_Placa da fonte_TV_LG_32LF550B_32LF565BAWZ_32LF595B_EAY63630201.avif" class="d-block w-100" alt="placa de lg">
+                                        <h5 class="mt-2 fw-bold">Fonte 32LF550B</h5>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img src="./LG/LG_43LM6300PSB_43LM631C0SB_43LM6370PSB-EBU65672503.avif" class="d-block w-100" alt="placa de lg">
+                                        <h5 class="mt-2 fw-bold">Placa SSB 43LM631C0SB</h5>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img src="./LG/Fonte_Placa da fonte_TV_LG_32LF550B_32LF565BAWZ_32LF595B_EAY63630201.avif" class="d-block w-100" alt="placa de lg">
+                                        <h5 class="mt-2 fw-bold">Fonte 32LF550B</h5>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img src="./LG/LG_43LM6300PSB_43LM631C0SB_43LM6370PSB-EBU65672503.avif" class="d-block w-100" alt="placa de lg">
+                                        <h5 class="mt-2 fw-bold">Placa SSB 43LM631C0SB</h5>
+                                    </div><div class="col-md-3">
+                                        <img src="./LG/Fonte_Placa da fonte_TV_LG_32LF550B_32LF565BAWZ_32LF595B_EAY63630201.avif" class="d-block w-100" alt="placa de lg">
+                                        <h5 class="mt-2 fw-bold">Fonte 32LF550B</h5>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img src="./LG/LG_43LM6300PSB_43LM631C0SB_43LM6370PSB-EBU65672503.avif" class="d-block w-100" alt="placa de lg">
+                                        <h5 class="mt-2 fw-bold">Placa SSB 43LM631C0SB</h5>
+                                    </div>
+                                </div>
+                            </div>   
+                            <div class="tab-pane" id="panasonic">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img src="./panasonic/Placa_Fonte_Tv_Panasonic_Tc-43es630b_Tc-43fs630b_Tnpa6382.jpg" class="d-block w-100" alt="placa de panasonic">
+                                        <h5 class="mt-2 fw-bold">Fonte TC-43ES630B</h5>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img src="./panasonic/PLACA_PRINCIPAL_PANASONIC_TC-32A400B_TNP4G569.jpeg" class="d-block w-100" alt="placa de panasonic">
+                                        <h5 class="mt-2 fw-bold">Placa SSB TNP4G569</h5>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img src="./panasonic/PLACA_PRINCIPAL_PANASONIC_TC-32A400B_TNP4G569V7514.png" class="d-block w-100" alt="placa de panasonic">
+                                        <h5 class="mt-2 fw-bold">Placa SSB TC-32A400B 32LF550B</h5>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img src="./panasonic/Placa_Fonte_Tv_Panasonic_Tc-43es630b_Tc-43fs630b_Tnpa6382.jpg" class="d-block w-100" alt="placa de panasonic">
+                                        <h5 class="mt-2 fw-bold">Fonte TC-43ES630B</h5>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img src="./panasonic/PLACA_PRINCIPAL_PANASONIC_TC-32A400B_TNP4G569.jpeg" class="d-block w-100" alt="placa de panasonic">
+                                        <h5 class="mt-2 fw-bold">Placa SSB TNP4G569</h5>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img src="./panasonic/PLACA_PRINCIPAL_PANASONIC_TC-32A400B_TNP4G569V7514.png" class="d-block w-100" alt="placa de panasonic">
+                                        <h5 class="mt-2 fw-bold">Placa SSB TC-32A400B 32LF550B</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="sony">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img src="./sony/fonte_KDL-32BX325.JPG" class="d-block w-100" alt="placa de Sony">
+                                        <h5 class="fw-2 mt-2 fw-bold">Placa SSB KDL-32BX325</h5>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img src="./sony/Placa_Principal_TelevisorSonyKDl-46HX855.webp" class="d-block w-100" alt="placa de Sony">
+                                        <h5 class="fw-2 mt-2 fw-bold">Placa SSB KDL-46HX855</h5>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img src="./sony/Sony_Kdl-32ex525_40ex525_46ex525.jpeg" class="d-block w-100" alt="placa de Sony">
+                                        <h5 class="fw-2 mt-2 fw-bold">Placa SSB KDL-40EX525</h5>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img src="./sony/fonte_KDL-32BX325.JPG" class="d-block w-100" alt="placa de Sony">
+                                        <h5 class="fw-2 mt-2 fw-bold">Placa SSB KDL-32BX325</h5>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img src="./sony/Placa_Principal_TelevisorSonyKDl-46HX855.webp" class="d-block w-100" alt="placa de Sony">
+                                        <h5 class="fw-2 mt-2 fw-bold">Placa SSB KDL-46HX855</h5>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img src="./sony/Sony_Kdl-32ex525_40ex525_46ex525.jpeg" class="d-block w-100" alt="placa de Sony">
+                                        <h5 class="fw-2 mt-2 fw-bold">Placa SSB KDL-40EX525</h5>
+                                    </div>
+                                </div>
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="fale-conosco" class="pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <h2 class="p-3 fs-2 mb-4">Fale Conosco</h2>
+                </div>
+                <div class="row">
+                    <div class="col-md-7">
+                        <form>
+                            <div class="mb-3">
+                                <label for="nome" class="form-label">Seu nome</label>
+                                <input type="text" class="form-control" id="nome" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="nome" class="form-label">Seu email</label>
+                                <input type="email" class="form-control" id="email" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="telefone" class="form-label">Seu telefone</label>
+                                <input type="tel" class="form-control" id="telefone">
+                            </div>
+                            <div class="mb-3">
+                                <label for="mensagem" class="form-label">Dúvidas</label>
+                                <textarea id="mensagem" class="form-control"></textarea>
+                            </div>
+                            <button type="submit" class="btn fw-bolds">Enviar</button>
+                        </form>
+                    </div>
+                    <div class="col-md-5 text-center">
+                        <div class="row">
+                            <h3>
+                                <i class="bi bi-hand-thumbs-up-fill"></i>
+                                Canal de Atendimento
+                            </h3>
+                            <ul class="redes-sociais">
+                                <li class="fs-5">
+                                    <a href="#">
+                                        <i class="bi bi-whatsapp"></i>
+                                        81996-6666
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="row mt-4">
+                            <h3>
+                                <i class="bi bi-cursor-fill"></i>
+                                Endereço
+                            </h3>
+                            <p class="fs-5">Av. Antônio de Goes, 340 - 01 - Pina, Recife - PE</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
